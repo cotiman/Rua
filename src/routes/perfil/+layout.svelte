@@ -3,13 +3,15 @@
 </script>
 
 <div class="container">
-    <img src="/RUA_LOGO.png" alt="" srcset="">
+    <img class="logo" src="/RUA_LOGO.png" alt="" srcset="">
     <div class="buregerBtn">
         <BurgerBtn />
     </div>
 </div>
 
+
 <slot></slot>
+
 
 <style>
     :global(body){
@@ -19,20 +21,23 @@
        height: 100vh;
     }
 
+ 
+
     .container{
         display: grid;
         grid-template-columns: 30% 30%;
         justify-content: space-between;
-        margin: 10px;
+        padding: 10px;
     }
 
     .buregerBtn{
         text-align: right;
     }
 
-    img{
+    .logo{
         width: 174px;
     }
+
 
     
 </style>
