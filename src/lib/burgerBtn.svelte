@@ -24,7 +24,7 @@
         top:10vh;
         left: 0;
         width: 300px;
-        height: 90.7vh;
+        height: 90vh;
         background: white;
         z-index: 100;
         display: grid;

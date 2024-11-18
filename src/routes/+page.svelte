@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
   import Signature from "$lib/signature.svelte";
   import Geolocalizacion from "$lib/geolocalizacion.svelte";
+  import Grabadora from "$lib/grabadora.svelte";
   import { updatePositionStore,updatePositionTargetStore , updatePathStore} from "../store/functions";
   import Notification from "$lib/notification.svelte";
 
@@ -87,7 +88,7 @@
 
 
 
-<Notification />
+<Grabadora />
 <style >
 
 :global(form){

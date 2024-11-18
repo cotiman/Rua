@@ -23,4 +23,8 @@
 <textarea name="" id="" placeholder="Daños a consecuencia">
 </textarea>
 
+<style>
+    
+</style>
+
 

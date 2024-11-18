@@ -347,7 +347,7 @@ onMount(()=>{
         height: 50px;
         display: grid;
         align-items: center;
-        /* padding-top:10px; */
+        padding: 4px 0;
     }
 
     .icono{
