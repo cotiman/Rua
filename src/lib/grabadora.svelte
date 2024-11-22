@@ -46,15 +46,60 @@
     }
 </script>
 
-<main>
-    <button on:click={startRecording} disabled={isRecording}>Iniciar Grabación</button>
-    <button on:click={stopRecording} disabled={!isRecording}>Detener Grabación</button>
-    <button on:click={playAudio} disabled={!isRecorded}>Reproducir Audio</button>
-    <audio id="audioPlayback" src={audioUrl} controls></audio>
-</main>
+<h3>Grabación</h3>
+
+<div class="container">
+    {#if !isRecording}
+            <button on:click={startRecording}>Grabar</button>
+    {:else}
+        <button class="rec" on:click={stopRecording} >Detener</button>
+        <!-- <button on:click={playAudio}>Reproducir Audio</button> -->
+            <!-- else content here -->
+    {/if}
+        <audio id="audioPlayback" src={audioUrl} controls></audio>
+</div>
+
 
 <style>
+    h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+.container{
+        display: grid;
+        grid-template-columns: min-content auto;
+        gap:15px;
+        margin:15px;
+        justify-items: center;
+        justify-content: center;
+    }
     button {
-        margin: 5px;
+        /* margin: 5px; */
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        width: min-content;
+    }
+
+
+    .rec{
+        color:white;
+        background-color: red;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .container {
+            margin: 2vh 15vw;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .container {
+            margin:2vh 30vw;
+        }
     }
 </style>

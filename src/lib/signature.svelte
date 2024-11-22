@@ -133,8 +133,8 @@
 
 </script>
 
-<div>
-
+<div class="container">
+  <h3>Firma</h3>
   <canvas
     bind:this={canvas}
     on:mouseup={MouseUp}
@@ -144,13 +144,11 @@
     on:touchstart={MouseDown}
     on:touchmove={MouseMove}
     on:touchend={MouseUp}
-
-
   >
   </canvas>
 
 </div>
-<div>
+<!-- <div>
     <button on:click={Clear}>
         Clear
     </button>
@@ -161,13 +159,55 @@
         Load
     </button>
 
-</div>
-<div>
+</div> -->
+<!-- <div>
     <img bind:this={loadSignature} src="" alt="">
-</div>
+</div> -->
 
 <style>
   canvas {
     border: 1px solid black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    
   }
+  h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+.container{
+        display: grid;
+        grid-template-columns: auto;
+        gap:5px;
+        margin:15px;
+        justify-items: center;
+    }
+    button {
+        /* margin: 5px; */
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .rec{
+        color:white;
+        background-color: red;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .container {
+            margin: 2vh 15vw;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .container {
+            margin:2vh 30vw;
+        }
+    }
 </style>

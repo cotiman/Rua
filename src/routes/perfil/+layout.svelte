@@ -15,10 +15,11 @@
 
 <style>
     :global(body){
-       background: -webkit-linear-gradient(-90deg, #FFFFFF 0%, #72B5F7 70%);
+       background: -webkit-linear-gradient(-90deg, #e3e3e3 0%, #72B5F7 70%);
        margin: 0;
        padding: 0;
-       height: 100vh;
+       /* height: 100vh; */
+       margin-bottom: 2vh;
     }
 
  
