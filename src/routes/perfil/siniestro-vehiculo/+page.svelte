@@ -14,30 +14,33 @@
 
 </script>
 
+<h1>
+    Siniestro Vehiculo
+</h1>
 
 <form action="">
-
-    <DatosBasicos />
-    <DatosDeTeceros />
-    <DatosDelAsgurador />
-    <DatosAutomotor />
-    <DatosDelConductor />
-    <DatosTestigo />
-    <Grabadora />
-    <Observaciones />
-    <Signature />
-    <!-- 
-    <DatosDeTeceros />
-    <DatosDeTeceros />
-    <DatosTestigo />
-     -->
-    <div class="container">
-        <button type="submit">Enviar</button>
+    
+    <div class="container_datos">
+        <div>
+            <DatosBasicos />
+            <DatosDeTeceros />
+            <!-- <DatosDeTeceros /> -->
+            <!-- <DatosDeTeceros /> -->
+            <DatosTestigo />
+            <Observaciones />
+        </div>
+        <div>
+            <DatosDelConductor />
+            <DatosAutomotor />
+            <DatosDelAsgurador />
+            <!-- <DatosTestigo /> -->
+            <Grabadora />
+            <Signature />
+            <div class="container">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
     </div>
-
-
-
-
 </form>
 
 <style>
@@ -48,32 +51,53 @@
        padding: 0;
         height: 200vh;
     } */
+
+    h1{
+        text-align: center;
+        margin: 50px 0  20px 0;
+    }
     .container{
         display: grid;
         grid-template-columns: auto;
-        justify-items: center;
-        gap:5px;
-        margin:5px;
+        margin-top: 20px;
+    }
+
+    .container_datos{
+        display: grid;
+        grid-template-columns: auto;
     }
     button {
         /* margin: 5px; */
-        padding: 15px;
-        border: none;
+        padding:10px; 
         border-radius: 10px;
-        width: min-content;
+        font-size: medium;
+        border: none;
+        color:white;
+        background-color:#121C4E;
+        width: 50%;
+        max-width: 50%;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
     }
 
     @media only screen and (min-width: 600px) {
         /* For tablets: */
-        .container {
-            margin: 0 15vw;
-        }
+
     }
 
     @media only screen and (min-width: 768px) {
         /* For desktop: */
-        .container {
-            margin: 0 30vw;
-        }
+        h1{
+
+        margin-bottom: 50px;
+    }
+
+        .container_datos{
+       
+        grid-template-columns: auto auto;
+        column-gap: 150px;
+        margin: 2vh 20vw;
+    }
     }
 </style>

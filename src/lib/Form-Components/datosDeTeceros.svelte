@@ -1,20 +1,28 @@
 <h3>Datos de terceros</h3>
 
 <div class="container">
-    <div class="container-checkbox">
+    <!-- <div class="container-checkbox">
         <div>
-            <label for="">Email</label>
+            <label for="">Vehículo Dañado</label>
             <input type="checkbox" placeholder="Email">
         </div>
         <div>
             <label for="">Lesionados</label>
             <input type="checkbox" placeholder="Lesionados">
         </div>
-    </div>
+    </div>-->
+    <div class="marco">
+            <label for="">Vehículo Dañado</label>
+            <input type="checkbox" name="" id="">
+    </div> 
     <input type="text" placeholder="Matricula" required>
     <input type="text" placeholder="Marca" required>
     <input type="text" placeholder="Modelo" required>
     <input type="text" placeholder="Color" required>
+    <div class="marco">
+        <label for="">Lesionados</label>
+        <input type="checkbox" name="" id="">
+    </div>
     <input type="text" placeholder="Nombre Conductor o lesionado" required>
     <input type="text" placeholder="CI" required>
     <input type="number" placeholder="Telefono" required>
@@ -24,7 +32,7 @@
     <input type="text" placeholder="Localidad" required>
     <input type="text" placeholder="Departamento" required>
     <div class="marco">
-        <h4>Test Alcoholemia</h4>
+        <h4>Examen de Alcoholemia</h4>
         <div>
             <label for="">Positivo</label>
             <input type="checkbox" name="" id="">
@@ -34,7 +42,6 @@
             <input type="checkbox" name="" id="">
         </div>
     </div>
-    <br>
     <input type="number" placeholder="Nº Póliza" required>
     <input type="number" placeholder="Cantidad de lesionados" required>
     <input type="number" placeholder="Cantidad de Fallecidos" required>
@@ -103,7 +110,8 @@
     @media only screen and (min-width: 768px) {
         /* For desktop: */
         .container {
-            margin: 0 30vw;
+            /* margin: 0 40vw; */
+            margin: 0;
         }
     }
     

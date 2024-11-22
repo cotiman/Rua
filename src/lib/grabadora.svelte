@@ -99,7 +99,8 @@
     @media only screen and (min-width: 768px) {
         /* For desktop: */
         .container {
-            margin:2vh 30vw;
+            /* margin:2vh 30vw; */
+            margin:0;
         }
     }
 </style>

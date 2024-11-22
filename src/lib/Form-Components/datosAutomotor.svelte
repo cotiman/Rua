@@ -1,10 +1,37 @@
+<script>
+  import { onMount } from "svelte";
+
+  let currentYear
+  // @ts-ignore
+  let yearsArr = []
+    onMount(()=>{
+
+        currentYear = new Date().getFullYear()
+        for (let index = currentYear; index > currentYear - (currentYear - 1900); index--) {
+      
+            yearsArr.push(index)
+        }
+
+        // @ts-ignore
+        yearsArr = yearsArr
+    })
+
+
+</script>
+
+
 <h3>Datos del Automotor</h3>
 
 <div class="container">
     <input type="text" placeholder="Matrícula" required>
     <input type="text" placeholder="Marca" required>
     <input type="text" placeholder="Modelo" required>
-    <input type="number" placeholder="Año" required>
+    <select name="siniestroType" id="" required>
+        <option value="Año" disabled selected>Año</option>
+        {#each yearsArr as year}
+            <option value="{year}">{year}</option>
+        {/each}
+    </select>
     <input type="text" placeholder="Color" required>
     <input type="text" placeholder="Departamento empadronado" required>
     <input type="text" placeholder="Padrón" required>
@@ -39,7 +66,8 @@
     @media only screen and (min-width: 768px) {
         /* For desktop: */
         .container {
-            margin: 0 30vw;
+            /* margin: 0 40vw; */
+            margin: 0;
         }
     }
     

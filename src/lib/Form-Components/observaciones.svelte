@@ -40,6 +40,7 @@
         /* For desktop: */
         .container {
             margin: 0 30vw;
+            margin: 0;
         }
     }
 </style>
