@@ -1,6 +1,8 @@
 <h3>Datos Testigo</h3>
+<div class="container" style="margin-bottom: 5px;">
+    <input type="text" placeholder="cantidad de testigos">
+</div>
 <div class="container">
-
     <input type="text" placeholder="Nombre" required>
     <input type="text" placeholder="Apellido" required>
     <input type="text" placeholder="Documento" required>

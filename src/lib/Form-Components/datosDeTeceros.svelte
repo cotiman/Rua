@@ -1,16 +1,8 @@
 <h3>Datos de terceros</h3>
-
+<div class="container" style="margin-bottom: 5px;">
+    <input type="text" placeholder="cantidad de terceros">
+</div>
 <div class="container">
-    <!-- <div class="container-checkbox">
-        <div>
-            <label for="">Vehículo Dañado</label>
-            <input type="checkbox" placeholder="Email">
-        </div>
-        <div>
-            <label for="">Lesionados</label>
-            <input type="checkbox" placeholder="Lesionados">
-        </div>
-    </div>-->
     <div class="marco">
             <label for="">Vehículo Dañado</label>
             <input type="checkbox" name="" id="">

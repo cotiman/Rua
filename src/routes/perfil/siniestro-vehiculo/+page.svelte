@@ -27,14 +27,15 @@
             <!-- <DatosDeTeceros /> -->
             <!-- <DatosDeTeceros /> -->
             <DatosTestigo />
-            <Observaciones />
+            <DatosDelAsgurador />
+            
         </div>
         <div>
             <DatosDelConductor />
             <DatosAutomotor />
-            <DatosDelAsgurador />
             <!-- <DatosTestigo /> -->
             <Grabadora />
+            <Observaciones />
             <Signature />
             <div class="container">
                 <button type="submit">Enviar</button>
@@ -51,6 +52,12 @@
        padding: 0;
         height: 200vh;
     } */
+    
+    input{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
 
     h1{
         text-align: center;
