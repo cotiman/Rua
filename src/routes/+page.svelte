@@ -1,10 +1,14 @@
 <script>
+// @ts-nocheck
+
     import { onMount } from "svelte";
   import Signature from "$lib/signature.svelte";
   import Geolocalizacion from "$lib/geolocalizacion.svelte";
   import Grabadora from "$lib/grabadora.svelte";
   import { updatePositionStore,updatePositionTargetStore , updatePathStore} from "../store/functions";
   import Notification from "$lib/notification.svelte";
+  import Carousel from "$lib/Carousel.svelte";
+  import DatosDeTeceros from "$lib/Form-Components/datosDeTeceros.svelte";
 
 
   let ubicaciones = [
@@ -85,10 +89,12 @@
     UpdateMap
 </button> -->
 <!-- <Signature /> -->
+<Carousel>
+  <DatosDeTeceros />
+  <DatosDeTeceros />
+  <DatosDeTeceros />
 
-
-
-<Grabadora />
+</Carousel >
 <style >
 
 :global(form){

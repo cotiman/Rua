@@ -1,7 +1,17 @@
-<h3>Datos de terceros</h3>
-<div class="container" style="margin-bottom: 5px;">
+<script>
+    export let num = 1
+
+
+</script>
+
+
+<main>
+
+
+<p>Datos de terceros {num}</p>
+<!-- <div class="container" style="margin-bottom: 5px;">
     <input type="text" placeholder="cantidad de terceros">
-</div>
+</div> -->
 <div class="container">
     <div class="marco">
             <label for="">Vehículo Dañado</label>
@@ -42,7 +52,7 @@
     <textarea name="" id="" placeholder="Daños">
     </textarea>
 </div>
-
+</main>
 
 <style>
 
@@ -81,6 +91,15 @@
         font-size: 15px;
         margin: 0.3vh 0;
         padding: 0;
+    }
+
+    p{
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: rgb(92, 92, 92);
+        margin: 10px 0 5px 0;
     }
 
     .marco{

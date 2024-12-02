@@ -1,21 +1,35 @@
-<h3>Datos Testigo</h3>
-<div class="container" style="margin-bottom: 5px;">
-    <input type="text" placeholder="cantidad de testigos">
-</div>
-<div class="container">
-    <input type="text" placeholder="Nombre" required>
-    <input type="text" placeholder="Apellido" required>
-    <input type="text" placeholder="Documento" required>
-    <input type="text" placeholder="Domicilio" required>
-    <input type="number" placeholder="Teléfono" required>
-    <input type="text" placeholder="Parentesco con el conductor" required>
-</div>
+<script>
+    export let num = 1
+</script>
+<main>
+
+    <p>Datos Testigo {num}</p>
+
+    <div class="container">
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="text" placeholder="Documento" required>
+        <input type="text" placeholder="Domicilio" required>
+        <input type="number" placeholder="Teléfono" required>
+        <input type="text" placeholder="Parentesco con el conductor" required>
+    </div>
+</main>
 <style>
     .container{
         display: grid;
         grid-template-columns: auto;
         gap:5px;
         margin:5px;
+    }
+
+    
+    p{
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: rgb(92, 92, 92);
+        margin: 10px 0 5px 0;
     }
 
     input{
